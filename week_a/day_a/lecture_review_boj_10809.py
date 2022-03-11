@@ -1,5 +1,7 @@
 import string
 
+word = input()
+
 
 def count_word(word):
     result = [-1]*len(string.ascii_lowercase)
@@ -10,4 +12,4 @@ def count_word(word):
     print(" ".join(str(num) for num in result))
 
 
-count_word("baekjoon")
+count_word(word)
