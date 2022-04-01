@@ -8,12 +8,9 @@ M_list = list(map(int, stdin.readline().split()))
 
 N_list.sort()
 
-answer = []
-
-for i in range(M):
+for target in M_list:
     start = 0
     end = N - 1
-    target = M_list[i]
     res = 0
 
     while start <= end:
@@ -26,7 +23,4 @@ for i in range(M):
             res = 1
             break
 
-    answer.append(res)
-
-for a in answer:
-    print(a, end=' ')
+    print(res, end=' ')
