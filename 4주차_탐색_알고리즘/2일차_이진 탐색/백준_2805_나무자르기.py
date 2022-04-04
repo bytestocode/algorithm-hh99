@@ -10,9 +10,11 @@ h = 0
 while start <= end:
     total = 0
     mid = (start + end) // 2
+
     for tree in tree_list:
         if tree > mid:
             total += tree - mid
+
     if total < M:
         end = mid - 1
     else:
