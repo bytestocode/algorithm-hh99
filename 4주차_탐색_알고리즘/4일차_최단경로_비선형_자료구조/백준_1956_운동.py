@@ -1,4 +1,5 @@
 import sys
+
 input = sys.stdin.readline
 
 V, E = map(int, input().split())
@@ -15,13 +16,12 @@ for k in range(1, V + 1):
             dist[a][b] = min(dist[a][b], dist[a][k] + dist[k][b])
 
 result = INF
-for i in range(V+1):
+for i in range(V + 1):
     result = min(result, dist[i][i])
 if result == INF:
     print(-1)
 else:
     print(result)
-
 
 '''
 3 4
