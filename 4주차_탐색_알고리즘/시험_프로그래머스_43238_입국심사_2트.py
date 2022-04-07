@@ -9,8 +9,8 @@ def solution(n, times):
         mid = (start + end) // 2
 
         sum = 0
-        for i in range(len(times)):
-            sum += mid // times[i]
+        for time in times:
+            sum += mid // time
 
         if sum >= n:
             answer = mid

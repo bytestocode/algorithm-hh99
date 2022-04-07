@@ -16,7 +16,7 @@ def solution(triangle):
             else:
                 max_tri[i][j] = max(max_tri[i-1][j-1] + triangle[i][j], max_tri[i-1][j] + triangle[i][j])
 
-    answer = max(max_tri[H - 1])
+    answer = max(max_tri[-1])
     return answer
 
 
